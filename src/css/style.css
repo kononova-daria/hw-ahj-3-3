@@ -1,0 +1,153 @@
+body {
+  margin: 0px;
+  background-color: #ececec;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 500px;
+  height: 500px;
+  padding: 5px;
+}
+
+.msg-container {
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(100% - 20px);
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #4b0088;
+  border-radius: 5px 5px 0px 0px;
+  overflow: auto;
+}
+
+.input-container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+}
+
+.msg-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  border: 1px solid #4b0088;
+  border-top: none;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.msg {
+  margin-bottom: 5px;
+  border: 1px solid #4b0088;
+  border-radius: 5px;
+  background-color: #f5e9ff;
+}
+
+.msg-title {
+  padding: 5px 10px;
+  text-align: right;
+  font-size: 12px;
+  color: #4b0088
+}
+
+.msg-text {
+  padding: 5px 10px;
+}
+
+.msg-coord {
+  padding: 5px 10px;
+  font-size: 12px;
+  color: #4b0088;
+}
+
+.modal-container {
+  position: absolute;
+  left: calc(50% - 200px);
+  top: calc(50vh - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 400px;
+  height: 240px;
+  background-color: #ffffff;
+  border: 1px solid #4b0088;
+  border-radius: 5px;
+  color: #4b0088;
+}
+
+.modal-title {
+  padding: 5px 10px;
+  border-bottom: 1px solid #4b0088;
+}
+
+.modal-body {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.modal-text {
+  text-align: center;
+}
+
+.modal-input-container {
+  margin-top: 15px;
+}
+
+.modal-label {
+  margin-bottom: 5px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.modal-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 25px;
+  padding: 5px 10px;
+  border: 1px solid #4b0088;
+  border-radius: 5px;
+}
+
+.modal-input:invalid {
+  border: 1px solid #880000;
+}
+
+.error {
+  font-size: 12px;
+  color: #880000;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: end;
+  padding: 5px 10px;
+}
+
+.modal-btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 90px;
+  background-color: #ffffff;
+  border: 1px solid #4b0088;
+  border-radius: 5px;
+  color: #4b0088;
+}
+
+.modal-btn:nth-child(n + 1) {
+  margin-left: 10px;
+}
+
+.hidden {
+  display: none;
+}

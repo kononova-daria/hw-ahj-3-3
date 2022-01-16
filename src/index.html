@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HW 3.3</title>
+</head>
+<body>
+    <div class="main-page">
+        <div class="container">
+            <div class="msg-container"></div>
+            <div class="input-container">
+                <input class="msg-input" type="text">
+            </div>
+        </div>
+
+        <div class="modal-container hidden">
+            <div class="modal-title">
+                <span>Что-то пошло не так...</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-text">
+                    К сожалению, нам не удалось определить Ваше местоположение, пожалуйста, дайте разрешение на использование геолокации или введите координаты самостоятельно.
+                </div>
+                <div class="modal-input-container">
+                    <label for="coordinates" class="modal-label">Широта и долгота через запятую:</label>
+                    <input id="coordinates" class="modal-input" type="text" placeholder="Например, 51.50851, -0.12572" pattern="^\[?-?\d{1,2}\.\d*,\s?-?\d{1,3}\.\d*\]?$">
+                    <span class="error hidden">Введенное значение не является корректным.</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn close" type="button">Отмена</button>
+                <button class="modal-btn ok" type="button">ОК</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
